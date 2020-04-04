@@ -1,10 +1,10 @@
 import './_index.scss'
 
 export default {
-  title: 'Demo',
+  title: 'Button',
 };
 
-export const Button = () => {
+export const ButtonTem = () => {
   const btn = document.createElement('button');
   btn.classList.add('c-button')
   btn.type = 'button';

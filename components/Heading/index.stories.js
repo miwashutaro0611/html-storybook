@@ -1,10 +1,15 @@
+import copyCodeBlock from '@pickra/copy-code-block'
 import Templete from './index.html'
 import './_index.scss'
 
 export default {
-  title: 'Demo',
+  title: 'Heading',
 };
 
-export const Heading = () =>  {
+export const HeadingTem = () =>  {
   return Templete
+}
+
+export const HeadingCode = () =>  {
+  return (Templete + copyCodeBlock(Templete))
 }

@@ -1,0 +1,21 @@
+body {
+  background: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+	color: inherit;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+// storybookのメインコンテンツの余白を開ける
+.sb-show-main #root {
+  margin: 10px;
+}
