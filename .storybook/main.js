@@ -2,6 +2,7 @@ const { resolve } = require('path')
 
 module.exports = {
   stories: ['../components/**/*.stories.js'],
+  addons: ['@storybook/addon-knobs/register'],
   webpackFinal: async(config, {configType}) => {
     config.module.rules.push({
       test: /\.scss$/,
