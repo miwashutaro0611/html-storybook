@@ -3,6 +3,13 @@
   height: 150px;
   border: 1px solid #ddd;
   background: #fff;
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.c-card--large {
+  width: 100%;
 }
 
 .c-card__title {

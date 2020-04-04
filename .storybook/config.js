@@ -40,8 +40,10 @@ const customViewports = {
 addParameters({
   viewport: { viewports: customViewports },
   backgrounds: [
-    { name: 'twitter', value: '#00aced' },
+    { name: 'white', value: '#fff', default: true },
+    { name: 'black', value: '#333' },
     { name: 'facebook', value: '#3b5998' },
+    { name: 'twitter', value: '#00aced' },
   ],
   darkMode: {
     // Override the default dark theme

@@ -1,5 +1,6 @@
 import copyCodeBlock from '@pickra/copy-code-block'
-import { withKnobs, text } from "@storybook/addon-knobs"
+import { withKnobs } from "@storybook/addon-knobs"
+import {Template, TemplateInclude} from './index.js'
 
 import README from './README.md'
 
@@ -11,31 +12,10 @@ export default {
   }
 }
 
-const Templete = () => {
-  const cardTitle = text('Title', 'タイトル')
-  const cardText = text('Text', 'テキストテキスト')
-  return `
-    <div class='c-card'>
-      <p class='c-card__title'>${cardTitle}</p>
-      <p class='c-card__text'>
-        ${cardText}
-      </p>
-    </div>
-  `
-}
-
-const TempleteInclude = () => {
-  const cardTitle = text('Title', 'タイトル')
-  const cardText = text('Text', 'テキストテキスト')
-  return `
-    {include 'text.php' valueTitle='${cardTitle}' valuetext='${cardText}'}
-  `
-}
-
 export const CardTem = () =>  {
-  return Templete()
+  return Template()
 }
 
 export const CardCode = () =>  {
-  return (Templete() + copyCodeBlock(Templete()) + copyCodeBlock(TempleteInclude()))
+  return (Template() + copyCodeBlock(Template()) + copyCodeBlock(TemplateInclude()))
 }
