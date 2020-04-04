@@ -1,9 +1,14 @@
 import copyCodeBlock from '@pickra/copy-code-block'
 import { withKnobs, text } from "@storybook/addon-knobs"
 
+import README from './README.md'
+
 export default {
   title: 'Card',
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+  parameters: {
+    notes: { README }
+  }
 }
 
 const Templete = () => {
@@ -19,10 +24,18 @@ const Templete = () => {
   `
 }
 
+const TempleteInclude = () => {
+  const cardTitle = text('Title', 'タイトル')
+  const cardText = text('Text', 'テキストテキスト')
+  return `
+    {include 'text.php' valueTitle='${cardTitle}' valuetext='${cardText}'}
+  `
+}
+
 export const CardTem = () =>  {
   return Templete()
 }
 
 export const CardCode = () =>  {
-  return (Templete() + copyCodeBlock(Templete()))
+  return (Templete() + copyCodeBlock(Templete()) + copyCodeBlock(TempleteInclude()))
 }
