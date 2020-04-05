@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "location": true,
+    "ga": true
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
