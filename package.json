@@ -15,12 +15,12 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "*.js": "eslint --fix",
     "*.scss": "stylelint --fix"
   },
   "dependencies": {
+    "@storybook/addon-knobs": "^5.3.19",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.3.1",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
@@ -32,11 +32,9 @@
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
-    "@pickra/copy-code-block": "^1.2.0",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-backgrounds": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",
-    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-notes": "^5.3.19",
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.19",

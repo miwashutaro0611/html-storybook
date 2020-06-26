@@ -1,10 +1,9 @@
-import copyCodeBlock from '@pickra/copy-code-block'
 import { withKnobs } from "@storybook/addon-knobs"
-import {Template, TemplateInclude} from './index.js'
+import {Template} from './index.js'
 
 import README from './README.md'
 
-export default {
+const params = {
   title: 'Card',
   decorators: [withKnobs],
   parameters: {
@@ -16,6 +15,4 @@ export const CardTem = () =>  {
   return Template()
 }
 
-export const CardCode = () =>  {
-  return (Template() + copyCodeBlock(Template()) + copyCodeBlock(TemplateInclude()))
-}
+export default params

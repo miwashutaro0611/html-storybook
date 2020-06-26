@@ -5,7 +5,7 @@ import './_index.scss'
 
 const { html } = renderer()
 
-export default {
+const params = {
   title: 'Heading',
 }
 
@@ -16,3 +16,5 @@ export const HeadingTem2 = () => {
 HeadingTem2.story = {
   parameters: { pugCode: 'pug/index.pug' },
 }
+
+export default params

@@ -24,11 +24,3 @@ export const Template = () => {
     </div>
   `
 }
-
-export const TemplateInclude = () => {
-  const cardTitle = text('Title', 'タイトル')
-  const cardText = text('Text', 'テキストテキスト')
-  return `
-    {include 'text.php' valueTitle='${cardTitle}' valuetext='${cardText}'}
-  `
-}

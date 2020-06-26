@@ -1,6 +1,6 @@
 import './_index.scss'
 
-export default {
+const params = {
   title: 'Button',
 }
 
@@ -12,3 +12,5 @@ export const ButtonTem = () => {
   btn.addEventListener('click', (e) => console.log(e))
   return btn
 }
+
+export default params
