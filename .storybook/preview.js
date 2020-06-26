@@ -4,8 +4,6 @@ import { themes } from '@storybook/theming'
 
 import '../scss/style.scss'
 
-addDecorator(withA11y)
-
 const customViewports = {
   iPhone5: {
     name: 'iPhone5',
@@ -36,6 +34,8 @@ const customViewports = {
     },
   },
 }
+
+addDecorator(withA11y)
 
 addParameters({
   viewport: { viewports: customViewports },
