@@ -12,3 +12,7 @@ export default {
 export const HeadingTem2 = () => {
   return html(Templete)
 }
+
+HeadingTem2.story = {
+  parameters: { pugCode: 'pug/index.pug' },
+}

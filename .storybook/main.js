@@ -3,6 +3,8 @@ const { resolve } = require('path')
 module.exports = {
   stories: ['../components/**/*.stories.js'],
   addons: [
+    resolve(__dirname, './pugCode/register'),
+    '@whitespace/storybook-addon-html/register',
     '@storybook/addon-knobs/register',
     '@storybook/addon-a11y/register',
     '@storybook/addon-storysource/register',
