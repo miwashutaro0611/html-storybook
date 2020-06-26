@@ -3,8 +3,6 @@ const { resolve } = require('path')
 module.exports = {
   stories: ['../components/**/*.stories.js'],
   addons: [
-    resolve(__dirname, './pugCode/register'),
-    '@whitespace/storybook-addon-html/register',
     '@storybook/addon-knobs/register',
     '@storybook/addon-a11y/register',
     '@storybook/addon-storysource/register',
@@ -13,7 +11,9 @@ module.exports = {
     '@storybook/addon-docs',
     '@storybook/addon-backgrounds/register',
     'storybook-dark-mode/register',
-    'storypug'
+    'storypug',
+    '@whitespace/storybook-addon-html/register',
+    resolve(__dirname, './pugCode/register'),
   ],
   webpackFinal: async(config, {configType}) => {
     config.module.rules.push({
