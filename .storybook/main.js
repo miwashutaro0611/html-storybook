@@ -10,7 +10,8 @@ module.exports = {
     '@storybook/addon-viewport/register',
     '@storybook/addon-docs',
     '@storybook/addon-backgrounds/register',
-    'storybook-dark-mode/register'
+    'storybook-dark-mode/register',
+    'storypug'
   ],
   webpackFinal: async(config, {configType}) => {
     config.module.rules.push({
